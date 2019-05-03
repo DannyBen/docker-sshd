@@ -1,0 +1,2 @@
+# Set up as many AUTHORIZED_KEY* variables as needed
+export AUTHORIZED_KEY="ssh-rsa ... you@email.com"

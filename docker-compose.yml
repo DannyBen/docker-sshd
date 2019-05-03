@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  bash:
+    build: .
+    image: dannyben/sshd
+    volumes: &idrsa
+    - ~/.ssh/id_rsa:/root/.ssh/id_rsa:ro
+
+  client:
+    image: dannyben/sshd
+    command: ssh server
+    volumes: *idrsa
+
+  server:
+    image: dannyben/sshd
+    entrypoint: /sshd-entrypoint.sh
+    environment:
+      AUTHORIZED_KEY:
+
