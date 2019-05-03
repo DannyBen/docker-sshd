@@ -1,4 +1,4 @@
-FROM alpine:3.9.2
+FROM alpine
 
 RUN apk add --no-cache openssh
 
