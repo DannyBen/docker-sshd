@@ -49,3 +49,16 @@ In another terminal, mount your private key and connect to the server:
       --network dockernet \
       dannyben/sshd \
       ssh server
+
+
+Additional Information
+--------------------------------------------------
+
+- [dannyben/docker-sshd on GitHub][1]
+- [dannyben/sshd on Docker Hub][2]
+
+---
+
+[1]: https://github.com/DannyBen/docker-sshd
+[2]: https://hub.docker.com/r/dannyben/sshd/
+
