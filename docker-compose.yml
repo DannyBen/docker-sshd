@@ -9,6 +9,7 @@ services:
 
   client:
     image: dannyben/sshd
+    depends_on: [server]
     command: ssh server
     volumes: *idrsa
 
@@ -17,4 +18,3 @@ services:
     entrypoint: /sshd-entrypoint
     environment:
       AUTHORIZED_KEY:
-
