@@ -13,6 +13,10 @@ running quickly.
     $ docker-compose up server
     $ docker-compose run --rm client
 
+If you do not have an SSH key, you can generate a passphrase-less one with:
+
+    $ ssh-keygen -t rsa -C "you@email.com" -f id_rsa -N ''
+
 
 Usage
 --------------------------------------------------
