@@ -7,6 +7,6 @@ RUN mkdir -p /root/.ssh && \
     touch /root/.ssh/authorized_keys && \
     chmod 600 /root/.ssh/authorized_keys
 
-COPY sshd-entrypoint.sh /sshd-entrypoint.sh
+COPY sshd-entrypoint /sshd-entrypoint
 
 EXPOSE 22

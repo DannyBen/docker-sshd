@@ -14,7 +14,7 @@ services:
 
   server:
     image: dannyben/sshd
-    entrypoint: /sshd-entrypoint.sh
+    entrypoint: /sshd-entrypoint
     environment:
       AUTHORIZED_KEY:
 

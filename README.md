@@ -35,7 +35,7 @@ Create an environment variable with your public key, then start the server.
     $ export AUTHORIZED_KEY="ssh-rsa ..."
     $ docker run --rm -it -e AUTHORIZED_KEY \
       --network dockernet \
-      --entrypoint /sshd-entrypoint.sh \
+      --entrypoint /sshd-entrypoint \
       --name server \
       dannyben/sshd
 
