@@ -10,8 +10,8 @@ You can use the [docker-compose](docker-compose.yml) file, to get up and
 running quickly.
 
     $ export AUTHORIZED_KEY="ssh-rsa ..."
-    $ docker-compose up server
-    $ docker-compose run --rm client
+    $ docker compose up -d server
+    $ docker compose run --rm client
 
 If you do not have an SSH key, you can generate a passphrase-less one with:
 
